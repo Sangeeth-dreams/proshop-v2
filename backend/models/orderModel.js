@@ -6,6 +6,7 @@ const orderSchema = mongoose.Schema({
         required: true,
         ref: "User",
     },
+    //orderItems is an array of objects each representing an item in the order. each item has the following fields.
     orderItems: [
         {
             name: {type: String, required: true},

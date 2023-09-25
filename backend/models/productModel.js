@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//Define reviewSchema for product review, The schema has the following fields user(User model), name, rating & comment.
 const reviewSchema = mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -22,6 +23,7 @@ const reviewSchema = mongoose.Schema({
     timestamps: true,
 });
 
+//productSchema for the Product model.
 const productSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
